@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Abel Olatunbosun | Get In Touch</title>
+    <meta name="description" content="Get in touch with Abel Olatunbosun for your next digital project. Multiple ways to connect and start your project.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#3B82F6',
+                        'secondary': '#1E40AF',
+                        'accent': '#10B981',
+                        'dark': '#0F172A',
+                        'darker': '#020617'
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif'],
+                        'display': ['Poppins', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="bg-dark text-white overflow-x-hidden">
+    <!-- Navigation (injected) -->
+    <div id="navbar-container"></div>
+
+    <!-- Contact Section -->
+    <section class="py-12 lg:py-20 pt-20 lg:pt-32 bg-dark relative min-h-screen">
+        <div class="container mx-auto px-4 lg:px-6">
+            <div class="text-center mb-12 lg:mb-16 page-transition">
+                <h1 class="text-3xl md:text-5xl lg:text-6xl font-display font-bold mb-4 text-gradient">
+                    Contact Me
+                </h1>
+                <p class="text-gray-400 text-base lg:text-lg max-w-2xl mx-auto">
+                    Ready to start your project? Let's discuss how I can help bring your vision to life.
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-8 lg:gap-12">
+                <!-- Contact Information -->
+                <div class="animate-fade-in-up animation-delay-200">
+                    <h2 class="text-2xl lg:text-3xl font-semibold mb-6 lg:mb-8">Let's Connect</h2>
+                    
+                    <!-- Contact Methods -->
+                    <div class="space-y-4 lg:space-y-6">
+                        <!-- Phone -->
+                        <a href="tel:+2348067138687" class="contact-item group">
+                            <div class="contact-icon bg-gradient-primary">
+                                <i data-feather="phone" class="w-5 h-5 lg:w-6 lg:h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-sm lg:text-base group-hover:text-accent transition-colors">Phone</h4>
+                                <p class="text-gray-400 text-sm lg:text-base">+234 806 713 8687</p>
+                            </div>
+                        </a>
+                        
+                        <!-- WhatsApp -->
+                        <a href="https://wa.me/2347061899020" target="_blank" class="contact-item group">
+                            <div class="contact-icon bg-green-600">
+                                <i data-feather="message-circle" class="w-5 h-5 lg:w-6 lg:h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-sm lg:text-base group-hover:text-accent transition-colors">WhatsApp</h4>
+                                <p class="text-gray-400 text-sm lg:text-base">+234 706 189 9020</p>
+                            </div>
+                        </a>
+                        
+                        <!-- Telegram -->
+                        <a href="https://t.me/+2347061899020" target="_blank" class="contact-item group">
+                            <div class="contact-icon bg-blue-600">
+                                <i data-feather="send" class="w-5 h-5 lg:w-6 lg:h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-sm lg:text-base group-hover:text-accent transition-colors">Telegram</h4>
+                                <p class="text-gray-400 text-sm lg:text-base">+234 706 189 9020</p>
+                            </div>
+                        </a>
+                        
+                        <!-- Twitter -->
+                        <a href="https://twitter.com/Oluwaseun319" target="_blank" class="contact-item group">
+                            <div class="contact-icon bg-blue-500">
+                                <i data-feather="twitter" class="w-5 h-5 lg:w-6 lg:h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-sm lg:text-base group-hover:text-accent transition-colors">Twitter</h4>
+                                <p class="text-gray-400 text-sm lg:text-base">@Oluwaseun319</p>
+                            </div>
+                        </a>
+                        
+                        <!-- Email -->
+                        <a href="mailto:ibrahimoluwaseun263@gmail.com" class="contact-item group">
+                            <div class="contact-icon bg-gradient-accent">
+                                <i data-feather="mail" class="w-5 h-5 lg:w-6 lg:h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-sm lg:text-base group-hover:text-accent transition-colors">Email</h4>
+                                <p class="text-gray-400 text-sm lg:text-base">ibrahimoluwaseun263@gmail.com</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="card animate-fade-in-up animation-delay-400">
+                    <h3 class="text-xl lg:text-2xl font-semibold mb-6" id="contact-form-title">Send Message</h3>
+                    <form id="contact-form"
+                          class="space-y-4 lg:space-y-6"
+                          action="https://formspree.io/f/xandqoob"
+                          method="POST"
+                          novalidate
+                          data-enhanced="true"
+                          aria-labelledby="contact-form-title"
+                          role="form">
+
+                        <!-- Honeypot field for spam protection -->
+                        <div class="hidden" aria-hidden="true">
+                            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off">
+                        </div>
+
+                        <!-- Form status messages container -->
+                        <div id="form-messages" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+
+                        <div class="grid sm:grid-cols-2 gap-4 lg:gap-6">
+                            <div class="form-group">
+                                <label for="name" class="block text-sm font-medium mb-2">
+                                    Name <span class="text-red-400" aria-label="required">*</span>
+                                </label>
+                                <input type="text"
+                                       id="name"
+                                       name="name"
+                                       required
+                                       minlength="2"
+                                       maxlength="50"
+                                       autocomplete="name"
+                                       class="w-full px-3 lg:px-4 py-2 lg:py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all duration-200 text-sm lg:text-base border border-gray-600 focus:border-primary"
+                                       placeholder="Your Name"
+                                       aria-describedby="name-error"
+                                       aria-invalid="false">
+                                <div id="name-error" class="error-message sr-only" role="alert"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email" class="block text-sm font-medium mb-2">
+                                    Email <span class="text-red-400" aria-label="required">*</span>
+                                </label>
+                                <input type="email"
+                                       id="email"
+                                       name="email"
+                                       required
+                                       autocomplete="email"
+                                       class="w-full px-3 lg:px-4 py-2 lg:py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all duration-200 text-sm lg:text-base border border-gray-600 focus:border-primary"
+                                       placeholder="your.email@example.com"
+                                       aria-describedby="email-error"
+                                       aria-invalid="false">
+                                <div id="email-error" class="error-message sr-only" role="alert"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject" class="block text-sm font-medium mb-2">
+                                Subject <span class="text-red-400" aria-label="required">*</span>
+                            </label>
+                            <input type="text"
+                                   id="subject"
+                                   name="subject"
+                                   required
+                                   minlength="5"
+                                   maxlength="100"
+                                   autocomplete="off"
+                                   class="w-full px-3 lg:px-4 py-2 lg:py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all duration-200 text-sm lg:text-base border border-gray-600 focus:border-primary"
+                                   placeholder="Project Inquiry"
+                                   aria-describedby="subject-error"
+                                   aria-invalid="false">
+                            <div id="subject-error" class="error-message sr-only" role="alert"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="block text-sm font-medium mb-2">
+                                Message <span class="text-red-400" aria-label="required">*</span>
+                            </label>
+                            <textarea id="message"
+                                      name="message"
+                                      rows="5"
+                                      required
+                                      minlength="10"
+                                      maxlength="1000"
+                                      autocomplete="off"
+                                      class="w-full px-3 lg:px-4 py-2 lg:py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all duration-200 resize-none text-sm lg:text-base border border-gray-600 focus:border-primary"
+                                      placeholder="Tell me about your project..."
+                                      aria-describedby="message-error"
+                                      aria-invalid="false"></textarea>
+                            <div id="message-error" class="error-message sr-only" role="alert"></div>
+                        </div>
+
+                        <!-- Formspree configuration -->
+                        <input type="hidden" name="_next" value="thankyou.html">
+                        <input type="hidden" name="_subject" value="New Contact Form Submission">
+                        <input type="text" name="_honey" style="display:none">
+
+                        <!-- Fallback for when JavaScript is disabled -->
+                        <noscript>
+                            <input type="submit" value="Send Message" class="w-full cta-button bg-gradient-primary hover:shadow-lg hover:shadow-primary/25 justify-center">
+                        </noscript>
+
+                        <!-- Submit button with loading state -->
+                        <button type="submit"
+                                id="submit-btn"
+                                class="w-full cta-button bg-gradient-primary hover:shadow-lg hover:shadow-primary/25 justify-center disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200"
+                                aria-describedby="submit-status">
+                            <span id="submit-text">Send Message</span>
+                            <i data-feather="send" class="w-5 h-5 ml-2" id="submit-icon"></i>
+                            <span class="sr-only" id="submit-status">Click to send your message</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="text-center mt-12 lg:mt-16 animate-fade-in-up animation-delay-600">
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="services.html" class="cta-button bg-transparent border-2 border-accent hover:bg-accent/10 hover:shadow-lg hover:shadow-accent/25">
+                        <span>View Services</span>
+                        <i data-feather="arrow-right" class="w-5 h-5 ml-2"></i>
+                    </a>
+                    <a href="portfolio.html" class="cta-button bg-transparent border-2 border-primary hover:bg-primary/10 hover:shadow-lg hover:shadow-primary/25">
+                        <span>See Portfolio</span>
+                        <i data-feather="eye" class="w-5 h-5 ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (injected) -->
+    <div id="footer-container"></div>
+
+    <!-- Custom JavaScript -->
+            <script src="script.js"></script>
+            <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                // Load navbar
+                fetch('navbar.html')
+                    .then(response => response.text())
+                    .then(html => {
+                        document.getElementById('navbar-container').innerHTML = html;
+                        // Highlight active link
+                        const path = window.location.pathname.split('/').pop();
+                        document.querySelectorAll('.nav-link').forEach(link => {
+                            if (link.getAttribute('href') === path) {
+                                link.classList.add('active');
+                            }
+                        });
+                        // Re-initialize feather icons if needed
+                        if (window.feather) feather.replace();
+                        // Re-attach mobile menu JS if needed
+                        if (window.PortfolioApp && window.PortfolioApp.setupMobileMenu) {
+                            window.PortfolioApp.setupMobileMenu();
+                        }
+                    });
+
+                // Load footer
+                fetch('footer.html')
+                    .then(response => response.text())
+                    .then(html => {
+                        document.getElementById('footer-container').innerHTML = html;
+                        // Re-initialize feather icons for footer
+                        if (window.feather) feather.replace();
+                    });
+            });
+            </script>
+</body>
+</html>

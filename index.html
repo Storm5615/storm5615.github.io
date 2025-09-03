@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- Open Graph / Social Meta Tags -->
+    <meta property="og:title" content="Abel Olatunbosun - Creative Freelancer | Web Design & Development">
+    <meta property="og:description" content="Professional freelancer specializing in web design, development, graphic design, video editing, and branding services.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourdomain.com/">
+    <meta property="og:image" content="https://yourdomain.com/assets/hero-pattern.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abel Olatunbosun - Creative Freelancer | Web Design & Development</title>
+    <meta name="description" content="Professional freelancer specializing in web design, development, graphic design, video editing, and branding services.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#3B82F6',
+                        'secondary': '#1E40AF',
+                        'accent': '#10B981',
+                        'dark': '#0F172A',
+                        'darker': '#020617'
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif'],
+                        'display': ['Poppins', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="bg-dark text-white overflow-x-hidden">
+    <!-- Navigation (injected) -->
+    <div id="navbar-container"></div>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-30">
+            <div class="hero-pattern"></div>
+        </div>
+        
+        <!-- Gradient Background -->
+        <div class="absolute inset-0 bg-gradient-to-br from-primary/20 via-secondary/10 to-darker"></div>
+        
+        <!-- 3D Floating Elements -->
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        
+        <!-- Hero Content -->
+        <div class="relative z-10 flex flex-col xl:flex-row items-center justify-center xl:justify-between px-4 lg:px-8 xl:px-12 max-w-7xl mx-auto page-transition gap-8 lg:gap-12 xl:gap-20">
+            <!-- Professional Profile Image -->
+            <div class="flex-shrink-0 flex items-center justify-center xl:justify-start w-full xl:w-auto">
+                <div class="w-72 sm:w-80 lg:w-96 xl:w-[380px] 2xl:w-[420px] h-auto">
+                    <div class="aspect-[3/4] rounded-3xl bg-gradient-to-br from-primary via-secondary to-accent p-2 shadow-2xl hover:scale-105 transition-all duration-500 overflow-hidden group">
+                        <div class="w-full h-full rounded-2xl overflow-hidden relative">
+                            <!-- Professional Profile Photo -->
+                            <img
+                                src="https://ik.imagekit.io/storm5615/g11.jpg?updatedAt=1756892340316"
+                                alt="Abel Olatunbosun - Creative Freelancer & Digital Craftsman"
+                                class="w-full h-full object-cover object-center group-hover:scale-110 transition-all duration-700"
+                                loading="eager"
+                            />
+                            <!-- Subtle Overlay for Text Readability -->
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
+                            <!-- Professional Badge -->
+                            <div class="absolute bottom-4 left-4 right-4 bg-white/10 backdrop-blur-sm rounded-lg p-3 transform translate-y-full group-hover:translate-y-0 transition-all duration-500">
+                                <p class="text-white text-sm font-medium text-center">Creative Freelancer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Hero Text and Actions -->
+            <div class="flex-1 flex flex-col items-center xl:items-start text-center xl:text-left justify-center w-full xl:max-w-2xl">
+                <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-display font-bold mb-4 lg:mb-6 xl:mb-8 animate-fade-in-up leading-tight">
+                    <span class="text-gradient drop-shadow-lg">Abel Olatunbosun</span>
+                </h1>
+                <p class="text-lg md:text-xl lg:text-2xl xl:text-3xl text-gray-300 mb-4 lg:mb-6 animate-fade-in-up animation-delay-200 leading-relaxed">
+                    <span class="font-semibold text-accent">Creative Freelancer</span> & <span class="font-semibold text-primary">Digital Craftsman</span>
+                </p>
+                <p class="text-base lg:text-lg xl:text-xl text-gray-400 mb-8 lg:mb-10 xl:mb-12 max-w-xl xl:max-w-2xl animate-fade-in-up animation-delay-400 leading-relaxed">
+                    <span class="italic">Specializing in</span> <span class="text-gradient font-medium">web design, development, graphics, video editing, and branding</span> to bring your digital vision to life.
+                </p>
+                <!-- CTA Buttons -->
+                <div class="flex flex-col sm:flex-row gap-3 lg:gap-4 xl:gap-5 mb-8 lg:mb-10 xl:mb-12 animate-fade-in-up animation-delay-600 w-full xl:w-auto justify-center xl:justify-start">
+                    <a href="portfolio.html" class="cta-button bg-gradient-primary hover:shadow-lg hover:shadow-primary/25 scale-105 text-sm lg:text-base xl:text-lg px-6 lg:px-8 py-3 lg:py-4">
+                        <span>See My Work</span>
+                        <i data-feather="arrow-right" class="w-4 h-4 lg:w-5 lg:h-5 ml-2"></i>
+                    </a>
+                    <a href="contact.html" class="cta-button bg-transparent border-2 border-accent hover:bg-accent/10 hover:shadow-lg hover:shadow-accent/25 scale-105 text-sm lg:text-base xl:text-lg px-6 lg:px-8 py-3 lg:py-4">
+                        <span>Hire Me</span>
+                        <i data-feather="user-plus" class="w-4 h-4 lg:w-5 lg:h-5 ml-2"></i>
+                    </a>
+                    <a href="https://ik.imagekit.io/storm5615/resume.pdf?updatedAt=1756908844052" target="_blank" class="cta-button bg-transparent border-2 border-primary hover:bg-primary/10 hover:shadow-lg hover:shadow-primary/25 scale-105 text-sm lg:text-base xl:text-lg px-6 lg:px-8 py-3 lg:py-4">
+                        <span>Download Resume</span>
+                        <i data-feather="download" class="w-4 h-4 lg:w-5 lg:h-5 ml-2"></i>
+                    </a>
+                </div>
+                <!-- Services Overview -->
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 lg:gap-6 xl:gap-8 animate-fade-in-up animation-delay-800 w-full xl:w-auto justify-center xl:justify-start">
+                    <a href="services.html" class="group text-center xl:text-left">
+                        <div class="w-14 h-14 lg:w-20 lg:h-20 xl:w-24 xl:h-24 bg-gradient-to-br from-purple-500 to-cyan-500 rounded-xl flex items-center justify-center mx-auto xl:mx-0 mb-2 lg:mb-3 group-hover:scale-110 transition-transform shadow-lg">
+                            <i data-feather="cpu" class="w-6 h-6 lg:w-8 lg:h-8 xl:w-10 xl:h-10"></i>
+                        </div>
+                        <p class="text-xs lg:text-sm xl:text-base text-gray-400 group-hover:text-purple-400 transition-colors font-medium">AI Automation</p>
+                    </a>
+                    <a href="services.html" class="group text-center xl:text-left">
+                        <div class="w-14 h-14 lg:w-20 lg:h-20 xl:w-24 xl:h-24 bg-gradient-primary rounded-xl flex items-center justify-center mx-auto xl:mx-0 mb-2 lg:mb-3 group-hover:scale-110 transition-transform shadow-lg">
+                            <i data-feather="layout" class="w-6 h-6 lg:w-8 lg:h-8 xl:w-10 xl:h-10"></i>
+                        </div>
+                        <p class="text-xs lg:text-sm xl:text-base text-gray-400 group-hover:text-primary transition-colors font-medium">Web Design</p>
+                    </a>
+                    <a href="services.html" class="group text-center xl:text-left">
+                        <div class="w-14 h-14 lg:w-20 lg:h-20 xl:w-24 xl:h-24 bg-gradient-accent rounded-xl flex items-center justify-center mx-auto xl:mx-0 mb-2 lg:mb-3 group-hover:scale-110 transition-transform shadow-lg">
+                            <i data-feather="code" class="w-6 h-6 lg:w-8 lg:h-8 xl:w-10 xl:h-10"></i>
+                        </div>
+                        <p class="text-xs lg:text-sm xl:text-base text-gray-400 group-hover:text-accent transition-colors font-medium">Development</p>
+                    </a>
+                    <a href="services.html" class="group text-center xl:text-left">
+                        <div class="w-14 h-14 lg:w-20 lg:h-20 xl:w-24 xl:h-24 bg-gradient-to-br from-pink-500 to-orange-500 rounded-xl flex items-center justify-center mx-auto xl:mx-0 mb-2 lg:mb-3 group-hover:scale-110 transition-transform shadow-lg">
+                            <i data-feather="image" class="w-6 h-6 lg:w-8 lg:h-8 xl:w-10 xl:h-10"></i>
+                        </div>
+                        <p class="text-xs lg:text-sm xl:text-base text-gray-400 group-hover:text-pink-400 transition-colors font-medium">Graphics</p>
+                    </a>
+                    <a href="services.html" class="group text-center xl:text-left">
+                        <div class="w-14 h-14 lg:w-20 lg:h-20 xl:w-24 xl:h-24 bg-gradient-to-br from-red-500 to-purple-600 rounded-xl flex items-center justify-center mx-auto xl:mx-0 mb-2 lg:mb-3 group-hover:scale-110 transition-transform shadow-lg">
+                            <i data-feather="play-circle" class="w-6 h-6 lg:w-8 lg:h-8 xl:w-10 xl:h-10"></i>
+                        </div>
+                        <p class="text-xs lg:text-sm xl:text-base text-gray-400 group-hover:text-red-400 transition-colors font-medium">Video</p>
+                    </a>
+                    <a href="services.html" class="group text-center xl:text-left">
+                        <div class="w-14 h-14 lg:w-20 lg:h-20 xl:w-24 xl:h-24 bg-gradient-to-br from-yellow-500 to-orange-500 rounded-xl flex items-center justify-center mx-auto xl:mx-0 mb-2 lg:mb-3 group-hover:scale-110 transition-transform shadow-lg">
+                            <i data-feather="star" class="w-6 h-6 lg:w-8 lg:h-8 xl:w-10 xl:h-10"></i>
+                        </div>
+                        <p class="text-xs lg:text-sm xl:text-base text-gray-400 group-hover:text-yellow-400 transition-colors font-medium">Branding</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (injected) -->
+    <div id="footer-container"></div>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Load navbar
+            fetch('navbar.html')
+                .then(response => response.text())
+                .then(html => {
+                    document.getElementById('navbar-container').innerHTML = html;
+
+                    // Highlight active link
+                    const path = window.location.pathname.split('/').pop();
+                    document.querySelectorAll('.nav-link').forEach(link => {
+                        if (link.getAttribute('href') === path) {
+                            link.classList.add('active');
+                        }
+                    });
+
+                    // Re-initialize feather icons
+                    if (window.feather) feather.replace();
+
+                    // Setup mobile menu functionality after navbar is loaded
+                    if (window.PortfolioApp && window.PortfolioApp.setupMobileMenu) {
+                        window.PortfolioApp.setupMobileMenu();
+                    }
+                })
+                .catch(error => {
+                    console.error('Error loading navbar:', error);
+                });
+
+            // Load footer
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(html => {
+                    document.getElementById('footer-container').innerHTML = html;
+
+                    // Re-initialize feather icons for footer
+                    if (window.feather) feather.replace();
+                })
+                .catch(error => {
+                    console.error('Error loading footer:', error);
+                });
+        });
+
+
+    </script>
+</body>
+</html>

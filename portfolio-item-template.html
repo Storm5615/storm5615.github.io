@@ -1,0 +1,201 @@
+<!-- PORTFOLIO ITEM TEMPLATE -->
+<!-- Copy this template for each new portfolio project -->
+
+<!-- ============================================ -->
+<!-- VIDEO EDITING PROJECT TEMPLATE -->
+<!-- ============================================ -->
+<article class="group relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden hover:border-red-400/30 transition-all duration-500 hover:shadow-2xl hover:shadow-red-400/10 animate-fade-in-up animation-delay-600">
+    <!-- Project Video Thumbnail -->
+    <div class="relative h-48 lg:h-56 overflow-hidden">
+        <img 
+            src="YOUR_VIDEO_THUMBNAIL_URL_HERE" 
+            alt="PROJECT_NAME - Video Editing Showcase"
+            class="w-full h-full object-cover object-center group-hover:scale-110 transition-all duration-700"
+            loading="lazy"
+        />
+        <!-- Video Play Indicator -->
+        <div class="absolute inset-0 flex items-center justify-center">
+            <div class="w-16 h-16 lg:w-20 lg:h-20 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center group-hover:scale-110 transition-all duration-500 shadow-2xl">
+                <i data-feather="play" class="w-8 h-8 lg:w-10 lg:h-10 text-white ml-1"></i>
+            </div>
+        </div>
+        <!-- Overlay on hover -->
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-end justify-center pb-6">
+            <div class="flex space-x-3">
+                <a href="video-player.html?video=YOUR_VIDEO_ID" class="px-4 py-2 bg-white/20 backdrop-blur-sm rounded-lg text-white font-medium hover:bg-white/30 transition-all transform hover:scale-105">
+                    <i data-feather="play" class="w-4 h-4 inline mr-2"></i>
+                    Watch Video
+                </a>
+                <a href="YOUR_VIDEO_DOWNLOAD_URL" download class="px-4 py-2 bg-red-500/80 backdrop-blur-sm rounded-lg text-white font-medium hover:bg-red-500 transition-all transform hover:scale-105">
+                    <i data-feather="download" class="w-4 h-4 inline mr-2"></i>
+                    Download
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Project Info -->
+    <div class="p-6 lg:p-8">
+        <div class="mb-4">
+            <h3 class="text-xl lg:text-2xl font-display font-bold text-white mb-2 group-hover:text-red-400 transition-colors">
+                YOUR_PROJECT_TITLE
+            </h3>
+            <p class="text-gray-400 text-sm lg:text-base leading-relaxed">
+                YOUR_PROJECT_DESCRIPTION
+            </p>
+        </div>
+        
+        <!-- Tech Stack -->
+        <div class="flex flex-wrap gap-2 mb-6">
+            <span class="px-3 py-1 bg-red-500/20 text-red-300 rounded-full text-xs lg:text-sm font-medium border border-red-500/30">Video Editing</span>
+            <span class="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-xs lg:text-sm font-medium border border-purple-500/30">Motion Graphics</span>
+            <span class="px-3 py-1 bg-pink-500/20 text-pink-300 rounded-full text-xs lg:text-sm font-medium border border-pink-500/30">After Effects</span>
+        </div>
+        
+        <!-- Action Button -->
+        <a href="contact.html?project=YOUR_PROJECT_ID" class="inline-flex items-center text-red-400 hover:text-white font-medium group/link transition-all">
+            <span>Discuss This Project</span>
+            <i data-feather="arrow-right" class="w-4 h-4 ml-2 group-hover/link:translate-x-1 transition-transform"></i>
+        </a>
+    </div>
+</article>
+
+<!-- ============================================ -->
+<!-- GRAPHICS DESIGN PROJECT TEMPLATE -->
+<!-- ============================================ -->
+<article class="group relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden hover:border-pink-400/30 transition-all duration-500 hover:shadow-2xl hover:shadow-pink-400/10 animate-fade-in-up animation-delay-400">
+    <!-- Project Image -->
+    <div class="relative h-48 lg:h-56 overflow-hidden">
+        <img 
+            src="YOUR_DESIGN_IMAGE_URL_HERE" 
+            alt="PROJECT_NAME - Graphics Design Showcase"
+            class="w-full h-full object-cover object-center group-hover:scale-110 transition-all duration-700"
+            loading="lazy"
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+        <!-- Overlay on hover -->
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-end justify-center pb-6">
+            <div class="flex space-x-3">
+                <a href="gallery.html?project=YOUR_PROJECT_ID" class="px-4 py-2 bg-white/20 backdrop-blur-sm rounded-lg text-white font-medium hover:bg-white/30 transition-all transform hover:scale-105">
+                    <i data-feather="image" class="w-4 h-4 inline mr-2"></i>
+                    Gallery
+                </a>
+                <a href="YOUR_DESIGN_FILES_URL" target="_blank" class="px-4 py-2 bg-pink-500/80 backdrop-blur-sm rounded-lg text-white font-medium hover:bg-pink-500 transition-all transform hover:scale-105">
+                    <i data-feather="download" class="w-4 h-4 inline mr-2"></i>
+                    Assets
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Project Info -->
+    <div class="p-6 lg:p-8">
+        <div class="mb-4">
+            <h3 class="text-xl lg:text-2xl font-display font-bold text-white mb-2 group-hover:text-pink-400 transition-colors">
+                YOUR_PROJECT_TITLE
+            </h3>
+            <p class="text-gray-400 text-sm lg:text-base leading-relaxed">
+                YOUR_PROJECT_DESCRIPTION
+            </p>
+        </div>
+        
+        <!-- Tech Stack -->
+        <div class="flex flex-wrap gap-2 mb-6">
+            <span class="px-3 py-1 bg-pink-500/20 text-pink-300 rounded-full text-xs lg:text-sm font-medium border border-pink-500/30">Branding</span>
+            <span class="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-xs lg:text-sm font-medium border border-purple-500/30">Logo Design</span>
+            <span class="px-3 py-1 bg-orange-500/20 text-orange-300 rounded-full text-xs lg:text-sm font-medium border border-orange-500/30">Print Design</span>
+        </div>
+        
+        <!-- Action Button -->
+        <a href="contact.html?project=YOUR_PROJECT_ID" class="inline-flex items-center text-pink-400 hover:text-white font-medium group/link transition-all">
+            <span>Discuss This Project</span>
+            <i data-feather="arrow-right" class="w-4 h-4 ml-2 group-hover/link:translate-x-1 transition-transform"></i>
+        </a>
+    </div>
+</article>
+
+<!-- ============================================ -->
+<!-- WEB DESIGN PROJECT TEMPLATE -->
+<!-- ============================================ -->
+<article class="group relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden hover:border-blue-400/30 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-400/10 animate-fade-in-up animation-delay-200">
+    <!-- Project Image -->
+    <div class="relative h-48 lg:h-56 overflow-hidden">
+        <img 
+            src="YOUR_WEBSITE_SCREENSHOT_URL_HERE" 
+            alt="PROJECT_NAME - Web Design Showcase"
+            class="w-full h-full object-cover object-center group-hover:scale-110 transition-all duration-700"
+            loading="lazy"
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+        <!-- Overlay on hover -->
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-end justify-center pb-6">
+            <div class="flex justify-center">
+                <a href="YOUR_WEBSITE_URL" target="_blank" class="px-6 py-2 bg-white/20 backdrop-blur-sm rounded-lg text-white font-medium hover:bg-white/30 transition-all transform hover:scale-105">
+                    <i data-feather="external-link" class="w-4 h-4 inline mr-2"></i>
+                    Visit Site
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Project Info -->
+    <div class="p-6 lg:p-8">
+        <div class="mb-4">
+            <h3 class="text-xl lg:text-2xl font-display font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
+                YOUR_PROJECT_TITLE
+            </h3>
+            <p class="text-gray-400 text-sm lg:text-base leading-relaxed">
+                YOUR_PROJECT_DESCRIPTION
+            </p>
+        </div>
+        
+        <!-- Tech Stack -->
+        <div class="flex flex-wrap gap-2 mb-6">
+            <span class="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-xs lg:text-sm font-medium border border-blue-500/30">React</span>
+            <span class="px-3 py-1 bg-green-500/20 text-green-300 rounded-full text-xs lg:text-sm font-medium border border-green-500/30">Node.js</span>
+            <span class="px-3 py-1 bg-yellow-500/20 text-yellow-300 rounded-full text-xs lg:text-sm font-medium border border-yellow-500/30">Responsive</span>
+        </div>
+        
+        <!-- Action Button -->
+        <a href="contact.html?project=YOUR_PROJECT_ID" class="inline-flex items-center text-blue-400 hover:text-white font-medium group/link transition-all">
+            <span>Discuss This Project</span>
+            <i data-feather="arrow-right" class="w-4 h-4 ml-2 group-hover/link:translate-x-1 transition-transform"></i>
+        </a>
+    </div>
+</article>
+
+<!-- ============================================ -->
+<!-- INSTRUCTIONS FOR USING TEMPLATES -->
+<!-- ============================================ -->
+
+<!-- 
+HOW TO USE THESE TEMPLATES:
+
+1. COPY the appropriate template above
+2. REPLACE the following placeholders:
+   - YOUR_PROJECT_TITLE: The name of your project
+   - YOUR_PROJECT_DESCRIPTION: Brief description of the project
+   - YOUR_PROJECT_ID: Unique ID for the project (lowercase, no spaces)
+   - YOUR_VIDEO_THUMBNAIL_URL_HERE: ImageKit URL for video thumbnail
+   - YOUR_VIDEO_ID: ID for video player (add to video-player.html)
+   - YOUR_VIDEO_DOWNLOAD_URL: Direct download link for video
+   - YOUR_DESIGN_IMAGE_URL_HERE: ImageKit URL for design preview
+   - YOUR_DESIGN_FILES_URL: Link to design files (Figma, etc.)
+   - YOUR_WEBSITE_SCREENSHOT_URL_HERE: ImageKit URL for website screenshot
+   - YOUR_WEBSITE_URL: Live website URL
+
+3. CUSTOMIZE the tech stack tags to match your project
+4. PASTE into portfolio.html in the portfolio grid section
+5. UPDATE animation delays (animation-delay-200, 400, 600, etc.)
+
+ANIMATION DELAYS:
+- Use incremental delays: 100, 200, 300, 400, 500, 600
+- This creates a staggered animation effect
+
+COLOR SCHEMES:
+- Video Projects: Red theme (red-400, red-500)
+- Graphics Projects: Pink theme (pink-400, pink-500)  
+- Web Projects: Blue theme (blue-400, blue-500)
+- AI/Tech Projects: Purple theme (purple-400, purple-500)
+- General Projects: Emerald theme (emerald-400, emerald-500)
+-->

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player - Abel Olatunbosun</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#3B82F6',
+                        'secondary': '#1E40AF',
+                        'accent': '#10B981',
+                        'dark': '#0F172A',
+                        'darker': '#020617'
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif'],
+                        'display': ['Poppins', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="bg-dark text-white overflow-x-hidden">
+    <!-- Navigation (injected) -->
+    <div id="navbar-container"></div>
+
+    <!-- Video Player Section -->
+    <section class="py-12 lg:py-20 pt-20 lg:pt-32 bg-darker relative min-h-screen">
+        <div class="container mx-auto px-4 lg:px-6">
+            <!-- Header -->
+            <div class="text-center mb-8 lg:mb-12">
+                <h1 class="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-4 text-gradient">
+                    Video Showcase
+                </h1>
+                <p class="text-gray-400 text-base lg:text-lg max-w-2xl mx-auto">
+                    Professional video content and brand storytelling
+                </p>
+            </div>
+
+            <!-- Video Player Container -->
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden">
+                    <!-- Simple Fast Video Player -->
+                    <div class="relative aspect-video bg-black">
+                        <video
+                            id="videoPlayer"
+                            class="w-full h-full"
+                            controls
+                            preload="metadata"
+                            playsinline
+                        >
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    
+                    <!-- Video Info -->
+                    <div class="p-6 lg:p-8">
+                        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
+                            <div>
+                                <h2 id="videoTitle" class="text-xl lg:text-2xl font-display font-bold text-white mb-2">
+                                    Loading...
+                                </h2>
+                                <p id="videoDescription" class="text-gray-400 text-sm lg:text-base">
+                                    Loading video information...
+                                </p>
+                            </div>
+                            
+                            <!-- Video Actions -->
+                            <div class="flex space-x-4">
+                                <button id="downloadBtn" class="inline-flex items-center px-6 py-3 bg-gradient-primary hover:shadow-lg hover:shadow-primary/25 rounded-lg font-medium transition-all">
+                                    <i data-feather="download" class="w-4 h-4 mr-2"></i>
+                                    Download
+                                </button>
+                                <button onclick="location.reload(true)" class="inline-flex items-center px-4 py-3 bg-gray-600 hover:bg-gray-500 text-white font-medium rounded-lg transition-all">
+                                    <i data-feather="refresh-cw" class="w-4 h-4 mr-2"></i>
+                                    Refresh
+                                </button>
+                                <a href="portfolio.html" class="inline-flex items-center px-6 py-3 border border-accent/30 hover:bg-accent/10 rounded-lg font-medium transition-all">
+                                    <i data-feather="arrow-left" class="w-4 h-4 mr-2"></i>
+                                    Back to Portfolio
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Video Stats -->
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8 pt-6 border-t border-gray-800/50">
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-accent" id="videoDuration">--:--</div>
+                                <div class="text-xs text-gray-400 uppercase tracking-wide">Duration</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-primary" id="videoQuality">HD</div>
+                                <div class="text-xs text-gray-400 uppercase tracking-wide">Quality</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-purple-400" id="videoFormat">MP4</div>
+                                <div class="text-xs text-gray-400 uppercase tracking-wide">Format</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-red-400" id="videoSize">--MB</div>
+                                <div class="text-xs text-gray-400 uppercase tracking-wide">Size</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Related Videos -->
+                <div class="mt-12">
+                    <h3 class="text-xl lg:text-2xl font-display font-bold text-white mb-6">More Videos</h3>
+                    <div id="relatedVideos" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- Related videos will be loaded here automatically -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (injected) -->
+    <div id="footer-container"></div>
+
+    <!-- Video Registry with cache busting -->
+    <script src="video-registry.js?v=2.0"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Load navbar
+            fetch('navbar.html')
+                .then(response => response.text())
+                .then(html => {
+                    document.getElementById('navbar-container').innerHTML = html;
+                    // Highlight active link
+                    const path = window.location.pathname.split('/').pop();
+                    document.querySelectorAll('.nav-link').forEach(link => {
+                        if (link.getAttribute('href') === path) {
+                            link.classList.add('active');
+                        }
+                    });
+                    // Re-initialize feather icons
+                    if (window.feather) feather.replace();
+                    // Setup mobile menu
+                    if (window.PortfolioApp && window.PortfolioApp.setupMobileMenu) {
+                        window.PortfolioApp.setupMobileMenu();
+                    }
+                });
+
+            // Load footer
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(html => {
+                    document.getElementById('footer-container').innerHTML = html;
+                    // Re-initialize feather icons for footer
+                    if (window.feather) feather.replace();
+                });
+
+            // Video player functionality
+            // Force clear any cached registry data
+            if (typeof VIDEO_PROJECTS !== 'undefined') {
+                console.log('Registry loaded, videos available:', VIDEO_PROJECTS.length);
+            } else {
+                console.error('VIDEO_PROJECTS not loaded!');
+            }
+
+            // Double check registry is loaded
+            setTimeout(() => {
+                if (typeof getAllVideoProjects === 'function') {
+                    console.log('Registry functions available');
+                    initVideoPlayer();
+                } else {
+                    console.error('Registry functions not available, reloading...');
+                    location.reload();
+                }
+            }, 100);
+        });
+
+        function initVideoPlayer() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const videoId = urlParams.get('video') || 'brand-video';
+
+            // Clear any cached data
+            console.log('Loading video:', videoId);
+            console.log('Available videos:', getAllVideoProjects().map(v => v.id));
+
+            // Get video data from registry
+            const video = getVideoProjectById(videoId);
+
+            if (!video) {
+                console.error('Video not found:', videoId);
+                console.error('Available videos:', getAllVideoProjects());
+                return;
+            }
+
+            console.log('Found video:', video);
+            
+            // Update video info
+            document.getElementById('videoTitle').textContent = video.title;
+            document.getElementById('videoDescription').textContent = video.description;
+            document.getElementById('videoDuration').textContent = video.duration;
+            document.getElementById('videoSize').textContent = video.size;
+
+            // Simple, fast video loading
+            const videoPlayer = document.getElementById('videoPlayer');
+
+            // Direct source assignment - fastest method
+            videoPlayer.src = video.videoUrl;
+            videoPlayer.load();
+
+            console.log('Loading video:', video.title, video.videoUrl);
+            
+            // Simple download functionality
+            document.getElementById('downloadBtn').addEventListener('click', () => {
+                window.open(video.downloadUrl, '_blank');
+            });
+
+            // Load related videos immediately
+            loadRelatedVideos(videoId);
+        }
+
+        function loadRelatedVideos(currentVideoId) {
+            const relatedVideos = getRelatedVideos(currentVideoId, 2);
+            const relatedVideosContainer = document.getElementById('relatedVideos');
+
+            relatedVideosContainer.innerHTML = '';
+
+            relatedVideos.forEach(video => {
+                const videoCard = document.createElement('a');
+                videoCard.href = `video-player.html?video=${video.id}`;
+                videoCard.className = 'group bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl overflow-hidden hover:border-accent/30 transition-all';
+
+                videoCard.innerHTML = `
+                    <div class="aspect-video relative overflow-hidden bg-gray-800">
+                        <img src="${video.thumbnailUrl}" alt="${video.title}" class="w-full h-full object-cover" loading="lazy">
+                        <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+                            <i data-feather="play-circle" class="w-12 h-12 text-white"></i>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h4 class="font-semibold text-white mb-1">${video.title}</h4>
+                        <p class="text-sm text-gray-400">${video.description.substring(0, 60)}...</p>
+                        <div class="flex items-center justify-between mt-2">
+                            <span class="text-xs text-accent">${video.duration}</span>
+                            <span class="text-xs text-gray-500">${video.category}</span>
+                        </div>
+                    </div>
+                `;
+
+                relatedVideosContainer.appendChild(videoCard);
+            });
+
+            // Re-initialize feather icons
+            if (window.feather) feather.replace();
+        }
+    </script>
+</body>
+</html>

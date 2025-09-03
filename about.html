@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Abel Olatunbosun | Creative Freelancer</title>
+    <meta name="description" content="Learn about Abel Olatunbosun's background, skills, and passion for creative digital solutions.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#3B82F6',
+                        'secondary': '#1E40AF',
+                        'accent': '#10B981',
+                        'dark': '#0F172A',
+                        'darker': '#020617'
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif'],
+                        'display': ['Poppins', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="bg-dark text-white overflow-x-hidden">
+    <!-- Navigation (injected) -->
+    <div id="navbar-container"></div>
+
+    <!-- About Section -->
+    <section class="py-12 lg:py-20 pt-20 lg:pt-32 bg-darker relative min-h-screen">
+        <div class="container mx-auto px-4 lg:px-6">
+            <div class="text-center mb-12 lg:mb-16 page-transition">
+                <h1 class="text-3xl md:text-5xl lg:text-6xl font-display font-bold mb-4 text-gradient">
+                    About Me
+                </h1>
+                <p class="text-gray-400 text-base lg:text-lg max-w-2xl mx-auto">
+                    Passionate about creating digital experiences that make a difference
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+                <!-- Profile Section -->
+                <div class="text-center lg:text-left animate-fade-in-up animation-delay-200">
+                    <!-- Professional Profile Photo -->
+                    <div class="w-48 h-48 lg:w-64 lg:h-64 mx-auto lg:mx-0 mb-6 lg:mb-8 rounded-2xl bg-gradient-primary p-1 transform hover:scale-105 transition-all duration-500 group shadow-2xl">
+                        <div class="w-full h-full rounded-2xl overflow-hidden relative">
+                            <img
+                                src="https://ik.imagekit.io/storm5615/g11.jpg?updatedAt=1756892340316"
+                                alt="Abel Olatunbosun - Creative Freelancer & Digital Craftsman"
+                                class="w-full h-full object-cover object-center group-hover:scale-110 transition-all duration-700"
+                                loading="lazy"
+                            />
+                            <!-- Professional Overlay -->
+                            <div class="absolute inset-0 bg-gradient-to-t from-primary/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
+                        </div>
+                    </div>
+                    
+                    <h2 class="text-2xl lg:text-3xl font-display font-semibold mb-4 lg:mb-6">Abel Olatunbosun</h2>
+                    <h3 class="text-lg lg:text-xl text-accent font-medium mb-4 lg:mb-6">Creative Problem Solver</h3>
+                    <p class="text-gray-300 leading-relaxed mb-4 lg:mb-6 text-sm lg:text-base">
+                        With years of experience in digital design and development, I help businesses and individuals 
+                        create compelling online presence through innovative solutions and creative storytelling.
+                    </p>
+                    <p class="text-gray-300 leading-relaxed text-sm lg:text-base">
+                        My approach combines technical expertise with creative vision to deliver projects that not only 
+                        look amazing but also drive results and engage audiences effectively.
+                    </p>
+                </div>
+                
+                <!-- Skills Section -->
+                <div class="animate-fade-in-up animation-delay-400">
+                    <h3 class="text-xl lg:text-2xl font-display font-semibold mb-6 lg:mb-8 text-center lg:text-left">Skills & Expertise</h3>
+                    
+                    <!-- Skill Items -->
+                    <div class="space-y-4 lg:space-y-6">
+                        <div class="skill-item" data-skill="95">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="font-medium text-sm lg:text-base">Web Development</span>
+                                <span class="text-accent font-semibold text-sm lg:text-base">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="transform: scaleX(0.95)"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="90">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="font-medium text-sm lg:text-base">Web Design</span>
+                                <span class="text-accent font-semibold text-sm lg:text-base">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="transform: scaleX(0.9)"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="85">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="font-medium text-sm lg:text-base">Graphic Design</span>
+                                <span class="text-accent font-semibold text-sm lg:text-base">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="transform: scaleX(0.85)"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="80">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="font-medium text-sm lg:text-base">Video Editing</span>
+                                <span class="text-accent font-semibold text-sm lg:text-base">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="transform: scaleX(0.8)"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="88">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="font-medium text-sm lg:text-base">Branding</span>
+                                <span class="text-accent font-semibold text-sm lg:text-base">88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="transform: scaleX(0.88)"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div class="text-center mt-12 lg:mt-16 animate-fade-in-up animation-delay-600">
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="portfolio.html" class="cta-button bg-gradient-primary hover:shadow-lg hover:shadow-primary/25">
+                        <span>View My Work</span>
+                        <i data-feather="arrow-right" class="w-5 h-5 ml-2"></i>
+                    </a>
+                    <a href="contact.html" class="cta-button bg-transparent border-2 border-accent hover:bg-accent/10 hover:shadow-lg hover:shadow-accent/25">
+                        <span>Get In Touch</span>
+                        <i data-feather="mail" class="w-5 h-5 ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (injected) -->
+    <div id="footer-container"></div>
+
+    <!-- Custom JavaScript -->
+        <script src="script.js"></script>
+            <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                // Load navbar
+                fetch('navbar.html')
+                    .then(response => response.text())
+                    .then(html => {
+                        document.getElementById('navbar-container').innerHTML = html;
+                        // Highlight active link
+                        const path = window.location.pathname.split('/').pop();
+                        document.querySelectorAll('.nav-link').forEach(link => {
+                            if (link.getAttribute('href') === path) {
+                                link.classList.add('active');
+                            }
+                        });
+                        // Re-initialize feather icons if needed
+                        if (window.feather) feather.replace();
+                        // Re-attach mobile menu JS if needed
+                        if (window.PortfolioApp && window.PortfolioApp.setupMobileMenu) {
+                            window.PortfolioApp.setupMobileMenu();
+                        }
+                    });
+
+                // Load footer
+                fetch('footer.html')
+                    .then(response => response.text())
+                    .then(html => {
+                        document.getElementById('footer-container').innerHTML = html;
+                        // Re-initialize feather icons for footer
+                        if (window.feather) feather.replace();
+                    });
+            });
+            </script>
+</body>
+</html>

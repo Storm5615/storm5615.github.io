@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Abel Olatunbosun | Creative Projects</title>
+    <meta name="description"
+        content="Explore Abel Olatunbosun's portfolio of web design, development, and creative projects.">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#3B82F6',
+                        'secondary': '#1E40AF',
+                        'accent': '#10B981',
+                        'dark': '#0F172A',
+                        'darker': '#020617'
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif'],
+                        'display': ['Poppins', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-dark text-white overflow-x-hidden">
+    <!-- Navigation (injected) -->
+    <div id="navbar-container"></div>
+
+    <!-- Portfolio Section -->
+    <section class="py-12 lg:py-20 pt-20 lg:pt-32 bg-dark relative min-h-screen">
+        <div class="container mx-auto px-4 lg:px-6">
+            <div class="text-center mb-12 lg:mb-16 page-transition">
+                <h1 class="text-3xl md:text-5xl lg:text-6xl font-display font-bold mb-4 text-gradient">
+                    Portfolio
+                </h1>
+                <p class="text-gray-400 text-base lg:text-lg max-w-2xl mx-auto">
+                    A showcase of my recent work and creative projects
+                </p>
+            </div>
+
+            <!-- Portfolio Grid -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+                <!-- AI Automation Project -->
+                <article
+                    class="group relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden hover:border-purple-400/30 transition-all duration-500 hover:shadow-2xl hover:shadow-purple-400/10 animate-fade-in-up animation-delay-100">
+                    <!-- Project Image -->
+                    <div class="relative h-48 lg:h-56 overflow-hidden">
+                        <img src="https://ik.imagekit.io/storm5615/make%201.png?updatedAt=1756893447834"
+                            alt="AI Automation Workflow - Make.com Integration"
+                            class="w-full h-full object-cover object-center group-hover:scale-110 transition-all duration-700"
+                            loading="lazy" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent">
+                        </div>
+                        <!-- Overlay on hover -->
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-end justify-center pb-6">
+                            <div class="flex justify-center">
+                                <a href="https://us2.make.com/1059213/scenarios/2322137/edit" target="_blank"
+                                    class="px-6 py-2 bg-white/20 backdrop-blur-sm rounded-lg text-white font-medium hover:bg-white/30 transition-all transform hover:scale-105">
+                                    <i data-feather="external-link" class="w-4 h-4 inline mr-2"></i>
+                                    View Automation
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Info -->
+                    <div class="p-6 lg:p-8">
+                        <div class="mb-4">
+                            <h3
+                                class="text-xl lg:text-2xl font-display font-bold text-white mb-2 group-hover:text-purple-400 transition-colors">
+                                AI Workflow Automation
+                            </h3>
+                            <p class="text-gray-400 text-sm lg:text-base leading-relaxed">
+                                New Instagram media (both images and videos) to Telegram Bot Automation using make.com
+                                [formerly Integromat]
+                            </p>
+                        </div>
+
+                        <!-- Tech Stack -->
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span
+                                class="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-xs lg:text-sm font-medium border border-purple-500/30">Modules</span>
+                            <span
+                                class="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-xs lg:text-sm font-medium border border-blue-500/30">AI/ML</span>
+                            <span
+                                class="px-3 py-1 bg-cyan-500/20 text-cyan-300 rounded-full text-xs lg:text-sm font-medium border border-cyan-500/30">Automation</span>
+                        </div>
+
+                        <!-- Action Button -->
+                        <a href="contact.html?project=ai-automation"
+                            class="inline-flex items-center text-purple-400 hover:text-white font-medium group/link transition-all">
+                            <span>Discuss This Project</span>
+                            <i data-feather="arrow-right"
+                                class="w-4 h-4 ml-2 group-hover/link:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </article>
+
+
+                <!-- Portfolio Item 3 -->
+                <article
+                    class="group relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden hover:border-red-400/30 transition-all duration-500 hover:shadow-2xl hover:shadow-red-400/10 animate-fade-in-up animation-delay-600">
+                    <!-- Project Video Thumbnail -->
+                    <div class="relative h-48 lg:h-56 overflow-hidden">
+                        <img src="https://ik.imagekit.io/storm5615/brave_screenshot_imagekit.io.png?updatedAt=1756904043041"
+                            alt="Brand Video Production - Professional Video Editing Showcase"
+                            class="w-full h-full object-cover object-center group-hover:scale-110 transition-all duration-700"
+                            loading="lazy" />
+                        <!-- Video Play Indicator -->
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div
+                                class="w-16 h-16 lg:w-20 lg:h-20 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center group-hover:scale-110 transition-all duration-500 shadow-2xl">
+                                <i data-feather="play" class="w-8 h-8 lg:w-10 lg:h-10 text-white ml-1"></i>
+                            </div>
+                        </div>
+                        <!-- Overlay on hover -->
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-end justify-center pb-6">
+                            <div class="flex space-x-3">
+                                <a href="video-player.html?video=brand-video"
+                                    class="px-4 py-2 bg-white/20 backdrop-blur-sm rounded-lg text-white font-medium hover:bg-white/30 transition-all transform hover:scale-105">
+                                    <i data-feather="play" class="w-4 h-4 inline mr-2"></i>
+                                    Watch Video
+                                </a>
+                                <a href="https://ik.imagekit.io/storm5615/video%20editing%201.mp4?updatedAt=1748376389164"
+                                    download
+                                    class="px-4 py-2 bg-red-500/80 backdrop-blur-sm rounded-lg text-white font-medium hover:bg-red-500 transition-all transform hover:scale-105">
+                                    <i data-feather="download" class="w-4 h-4 inline mr-2"></i>
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Info -->
+                    <div class="p-6 lg:p-8">
+                        <div class="mb-4">
+                            <h3
+                                class="text-xl lg:text-2xl font-display font-bold text-white mb-2 group-hover:text-red-400 transition-colors">
+                                Brand Video Production
+                            </h3>
+                            <p class="text-gray-400 text-sm lg:text-base leading-relaxed">
+                                A promotional advertisement video edit for the opening of a new cinema
+                            </p>
+                        </div>
+
+                        <!-- Tech Stack -->
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span
+                                class="px-3 py-1 bg-red-500/20 text-red-300 rounded-full text-xs lg:text-sm font-medium border border-red-500/30">Video
+                                Editing</span>
+                            <span
+                                class="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-xs lg:text-sm font-medium border border-purple-500/30">Motion
+                                Graphics</span>
+                            <span
+                                class="px-3 py-1 bg-pink-500/20 text-pink-300 rounded-full text-xs lg:text-sm font-medium border border-pink-500/30">After
+                                Effects</span>
+                        </div>
+
+                        <!-- Action Button -->
+                        <a href="contact.html?project=video-production"
+                            class="inline-flex items-center text-red-400 hover:text-white font-medium group/link transition-all">
+                            <span>Discuss This Project</span>
+                            <i data-feather="arrow-right"
+                                class="w-4 h-4 ml-2 group-hover/link:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article
+                    class="group relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden hover:border-pink-400/30 transition-all duration-500 hover:shadow-2xl hover:shadow-pink-400/10 animate-fade-in-up animation-delay-400">
+                    <!-- Project Image -->
+                    <div class="relative h-48 lg:h-56 overflow-hidden">
+                        <img src="https://ik.imagekit.io/storm5615/g2.png?updatedAt=1748375589683"
+                            alt="Creative Graphics Design - Professional Visual Design"
+                            class="w-full h-full object-cover object-center group-hover:scale-110 transition-all duration-700"
+                            loading="lazy" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent">
+                        </div>
+                        <!-- Overlay on hover -->
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-end justify-center pb-6">
+                            <div class="flex space-x-3">
+                                <a href="gallery.html?project=graphics-design"
+                                    class="px-4 py-2 bg-white/20 backdrop-blur-sm rounded-lg text-white font-medium hover:bg-white/30 transition-all transform hover:scale-105">
+                                    <i data-feather="image" class="w-4 h-4 inline mr-2"></i>
+                                    Gallery
+                                </a>
+                                <a href="https://ik.imagekit.io/storm5615/g2.png?updatedAt=1748375589683" download
+                                    class="px-4 py-2 bg-pink-500/80 backdrop-blur-sm rounded-lg text-white font-medium hover:bg-pink-500 transition-all transform hover:scale-105">
+                                    <i data-feather="download" class="w-4 h-4 inline mr-2"></i>
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Info -->
+                    <div class="p-6 lg:p-8">
+                        <div class="mb-4">
+                            <h3
+                                class="text-xl lg:text-2xl font-display font-bold text-white mb-2 group-hover:text-pink-400 transition-colors">
+                                Creative flyer design
+                            </h3>
+                            <p class="text-gray-400 text-sm lg:text-base leading-relaxed">
+                                School Flyer Design
+                            </p>
+                        </div>
+
+                        <!-- Tech Stack -->
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span
+                                class="px-3 py-1 bg-pink-500/20 text-pink-300 rounded-full text-xs lg:text-sm font-medium border border-pink-500/30">Branding</span>
+                            <span
+                                class="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-xs lg:text-sm font-medium border border-purple-500/30">Flyer
+                                Design</span>
+                            <span
+                                class="px-3 py-1 bg-orange-500/20 text-orange-300 rounded-full text-xs lg:text-sm font-medium border border-orange-500/30">Print
+                                Design</span>
+                        </div>
+
+                        <!-- Action Button -->
+                        <a href="contact.html?project=graphics-design"
+                            class="inline-flex items-center text-pink-400 hover:text-white font-medium group/link transition-all">
+                            <span>Discuss This Project</span>
+                            <i data-feather="arrow-right"
+                                class="w-4 h-4 ml-2 group-hover/link:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Graphics Design Project 2 -->
+                <article
+                    class="group relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden hover:border-pink-400/30 transition-all duration-500 hover:shadow-2xl hover:shadow-pink-400/10 animate-fade-in-up animation-delay-1000">
+                    <!-- Project Image -->
+                    <div class="relative h-48 lg:h-56 overflow-hidden">
+                        <img src="https://ik.imagekit.io/storm5615/g7.png?updatedAt=1748375604606"
+                            alt="Creative Graphics Design 2 - Professional Visual Design"
+                            class="w-full h-full object-cover object-center group-hover:scale-110 transition-all duration-700"
+                            loading="lazy" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent">
+                        </div>
+                        <!-- Overlay on hover -->
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-end justify-center pb-6">
+                            <div class="flex space-x-3">
+                                <a href="gallery.html?project=graphics-design"
+                                    class="px-4 py-2 bg-white/20 backdrop-blur-sm rounded-lg text-white font-medium hover:bg-white/30 transition-all transform hover:scale-105">
+                                    <i data-feather="image" class="w-4 h-4 inline mr-2"></i>
+                                    Gallery
+                                </a>
+                                <a href="https://ik.imagekit.io/storm5615/g7.png?updatedAt=1748375604606" download
+                                    class="px-4 py-2 bg-pink-500/80 backdrop-blur-sm rounded-lg text-white font-medium hover:bg-pink-500 transition-all transform hover:scale-105">
+                                    <i data-feather="download" class="w-4 h-4 inline mr-2"></i>
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Info -->
+                    <div class="p-6 lg:p-8">
+                        <div class="mb-4">
+                            <h3
+                                class="text-xl lg:text-2xl font-display font-bold text-white mb-2 group-hover:text-pink-400 transition-colors">
+                                Creative Banner Design
+                            </h3>
+                            <p class="text-gray-400 text-sm lg:text-base leading-relaxed">
+                                Proffessional banner design for a Restaurant
+                            </p>
+                        </div>
+
+                        <!-- Tech Stack -->
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span
+                                class="px-3 py-1 bg-pink-500/20 text-pink-300 rounded-full text-xs lg:text-sm font-medium border border-pink-500/30">Graphic
+                                Design</span>
+                            <span
+                                class="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-xs lg:text-sm font-medium border border-purple-500/30">Visual
+                                Identity</span>
+                            <span
+                                class="px-3 py-1 bg-orange-500/20 text-orange-300 rounded-full text-xs lg:text-sm font-medium border border-orange-500/30">Banner
+                                Design</span>
+                        </div>
+
+                        <!-- Action Button -->
+                        <a href="contact.html?project=graphics-design-2"
+                            class="inline-flex items-center text-pink-400 hover:text-white font-medium group/link transition-all">
+                            <span>Discuss This Project</span>
+                            <i data-feather="arrow-right"
+                                class="w-4 h-4 ml-2 group-hover/link:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- YouTube Shorts Video 1 -->
+                <article class="group relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden hover:border-red-400/30 transition-all duration-500 hover:shadow-2xl hover:shadow-red-400/10 animate-fade-in-up animation-delay-1200">
+                    <!-- Project Video Thumbnail -->
+                    <div class="relative h-48 lg:h-56 overflow-hidden">
+                        <img
+                            src="https://ik.imagekit.io/storm5615/brave_screenshot_imagekit.io%20(3).png?updatedAt=1756915390180"
+                            alt="YouTube Shorts Video 1 - Creative Short-form Content"
+                            class="w-full h-full object-cover object-center group-hover:scale-110 transition-all duration-700"
+                            loading="lazy"
+                        />
+                        <!-- Video Play Indicator -->
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="w-16 h-16 lg:w-20 lg:h-20 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center group-hover:scale-110 transition-all duration-500 shadow-2xl">
+                                <i data-feather="play" class="w-8 h-8 lg:w-10 lg:h-10 text-white ml-1"></i>
+                            </div>
+                        </div>
+                        <!-- YouTube Shorts Badge -->
+                        <div class="absolute top-4 left-4 bg-red-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                            SHORTS
+                        </div>
+                        <!-- Overlay on hover -->
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-end justify-center pb-6">
+                            <div class="flex space-x-3">
+                                <a href="video-player.html?video=youtube-shorts-1" class="px-4 py-2 bg-white/20 backdrop-blur-sm rounded-lg text-white font-medium hover:bg-white/30 transition-all transform hover:scale-105">
+                                    <i data-feather="play" class="w-4 h-4 inline mr-2"></i>
+                                    Watch Video
+                                </a>
+                                <a href="https://ik.imagekit.io/storm5615/SnapTik-dot-Kim-39ff5f825fcf6fd85ba97bc02e93a881.mp4?updatedAt=1756914959376" download class="px-4 py-2 bg-red-500/80 backdrop-blur-sm rounded-lg text-white font-medium hover:bg-red-500 transition-all transform hover:scale-105">
+                                    <i data-feather="download" class="w-4 h-4 inline mr-2"></i>
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Info -->
+                    <div class="p-6 lg:p-8">
+                        <div class="mb-4">
+                            <h3 class="text-xl lg:text-2xl font-display font-bold text-white mb-2 group-hover:text-red-400 transition-colors">
+                                YouTube Shorts Content
+                            </h3>
+                            <p class="text-gray-400 text-sm lg:text-base leading-relaxed">
+                                Creative short-form video content optimized for YouTube Shorts format and social media engagement.
+                            </p>
+                        </div>
+
+                        <!-- Tech Stack -->
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-3 py-1 bg-red-500/20 text-red-300 rounded-full text-xs lg:text-sm font-medium border border-red-500/30">YouTube Shorts</span>
+                            <span class="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-xs lg:text-sm font-medium border border-purple-500/30">Short Form</span>
+                            <span class="px-3 py-1 bg-pink-500/20 text-pink-300 rounded-full text-xs lg:text-sm font-medium border border-pink-500/30">Social Media</span>
+                        </div>
+
+                        <!-- Action Button -->
+                        <a href="contact.html?project=youtube-shorts-1" class="inline-flex items-center text-red-400 hover:text-white font-medium group/link transition-all">
+                            <span>Discuss This Project</span>
+                            <i data-feather="arrow-right" class="w-4 h-4 ml-2 group-hover/link:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- TikTok Video -->
+                <article class="group relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden hover:border-pink-400/30 transition-all duration-500 hover:shadow-2xl hover:shadow-pink-400/10 animate-fade-in-up animation-delay-1400">
+                    <!-- Project Video Thumbnail -->
+                    <div class="relative h-48 lg:h-56 overflow-hidden">
+                        <img
+                            src="https://ik.imagekit.io/storm5615/brave_screenshot_imagekit.io%20(2).png?updatedAt=1756915390306"
+                            alt="TikTok Content - Creative Short-form Video"
+                            class="w-full h-full object-cover object-center group-hover:scale-110 transition-all duration-700"
+                            loading="lazy"
+                        />
+                        <!-- Video Play Indicator -->
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="w-16 h-16 lg:w-20 lg:h-20 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center group-hover:scale-110 transition-all duration-500 shadow-2xl">
+                                <i data-feather="play" class="w-8 h-8 lg:w-10 lg:h-10 text-white ml-1"></i>
+                            </div>
+                        </div>
+                        <!-- TikTok Badge -->
+                        <div class="absolute top-4 left-4 bg-black text-white px-3 py-1 rounded-full text-xs font-bold">
+                            TIKTOK
+                        </div>
+                        <!-- Overlay on hover -->
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-end justify-center pb-6">
+                            <div class="flex space-x-3">
+                                <a href="video-player.html?video=tiktok-video" class="px-4 py-2 bg-white/20 backdrop-blur-sm rounded-lg text-white font-medium hover:bg-white/30 transition-all transform hover:scale-105">
+                                    <i data-feather="play" class="w-4 h-4 inline mr-2"></i>
+                                    Watch Video
+                                </a>
+                                <a href="https://ik.imagekit.io/storm5615/SnapTik-dot-Kim-fa61a25584d05ab13cb88c24fb47707e.mp4?updatedAt=1756914959149" download class="px-4 py-2 bg-pink-500/80 backdrop-blur-sm rounded-lg text-white font-medium hover:bg-pink-500 transition-all transform hover:scale-105">
+                                    <i data-feather="download" class="w-4 h-4 inline mr-2"></i>
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Info -->
+                    <div class="p-6 lg:p-8">
+                        <div class="mb-4">
+                            <h3 class="text-xl lg:text-2xl font-display font-bold text-white mb-2 group-hover:text-pink-400 transition-colors">
+                                TikTok Content Creation
+                            </h3>
+                            <p class="text-gray-400 text-sm lg:text-base leading-relaxed">
+                                Creative short-form video content optimized for TikTok platform and viral engagement.
+                            </p>
+                        </div>
+
+                        <!-- Tech Stack -->
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-3 py-1 bg-pink-500/20 text-pink-300 rounded-full text-xs lg:text-sm font-medium border border-pink-500/30">TikTok</span>
+                            <span class="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-xs lg:text-sm font-medium border border-purple-500/30">Short Form</span>
+                            <span class="px-3 py-1 bg-orange-500/20 text-orange-300 rounded-full text-xs lg:text-sm font-medium border border-orange-500/30">Viral Content</span>
+                        </div>
+
+                        <!-- Action Button -->
+                        <a href="contact.html?project=tiktok-video" class="inline-flex items-center text-pink-400 hover:text-white font-medium group/link transition-all">
+                            <span>Discuss This Project</span>
+                            <i data-feather="arrow-right" class="w-4 h-4 ml-2 group-hover/link:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- CTA Section -->
+            <div class="text-center mt-12 lg:mt-16 animate-fade-in-up animation-delay-800">
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="services.html"
+                        class="cta-button bg-gradient-primary hover:shadow-lg hover:shadow-primary/25">
+                        <span>View Services</span>
+                        <i data-feather="arrow-right" class="w-5 h-5 ml-2"></i>
+                    </a>
+                    <a href="contact.html"
+                        class="cta-button bg-transparent border-2 border-accent hover:bg-accent/10 hover:shadow-lg hover:shadow-accent/25">
+                        <span>Start Project</span>
+                        <i data-feather="plus" class="w-5 h-5 ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (injected) -->
+    <div id="footer-container"></div>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Load navbar
+            fetch('navbar.html')
+                .then(response => response.text())
+                .then(html => {
+                    document.getElementById('navbar-container').innerHTML = html;
+                    // Highlight active link
+                    const path = window.location.pathname.split('/').pop();
+                    document.querySelectorAll('.nav-link').forEach(link => {
+                        if (link.getAttribute('href') === path) {
+                            link.classList.add('active');
+                        }
+                    });
+                    // Re-initialize feather icons if needed
+                    if (window.feather) feather.replace();
+                    // Re-attach mobile menu JS if needed
+                    if (window.PortfolioApp && window.PortfolioApp.setupMobileMenu) {
+                        window.PortfolioApp.setupMobileMenu();
+                    }
+                });
+
+            // Load footer
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(html => {
+                    document.getElementById('footer-container').innerHTML = html;
+                    // Re-initialize feather icons for footer
+                    if (window.feather) feather.replace();
+                });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Registry Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; background: #1a1a1a; color: white; }
+        .video { margin: 20px 0; padding: 15px; border: 1px solid #333; border-radius: 8px; }
+        .error { color: #ff6b6b; }
+        .success { color: #51cf66; }
+    </style>
+</head>
+<body>
+    <h1>Video Registry Test</h1>
+    <div id="results"></div>
+
+    <script src="video-registry.js?v=2.0"></script>
+    <script>
+        const results = document.getElementById('results');
+        
+        function log(message, type = 'info') {
+            const div = document.createElement('div');
+            div.className = type;
+            div.textContent = message;
+            results.appendChild(div);
+        }
+        
+        // Test registry loading
+        if (typeof VIDEO_PROJECTS !== 'undefined') {
+            log('✅ VIDEO_PROJECTS loaded successfully', 'success');
+            log(`Found ${VIDEO_PROJECTS.length} videos`, 'success');
+            
+            VIDEO_PROJECTS.forEach((video, index) => {
+                const videoDiv = document.createElement('div');
+                videoDiv.className = 'video';
+                videoDiv.innerHTML = `
+                    <h3>${video.title} (ID: ${video.id})</h3>
+                    <p><strong>Category:</strong> ${video.category}</p>
+                    <p><strong>Description:</strong> ${video.description}</p>
+                    <p><strong>Video URL:</strong> ${video.videoUrl}</p>
+                    <p><strong>Thumbnail:</strong> ${video.thumbnailUrl}</p>
+                `;
+                results.appendChild(videoDiv);
+            });
+            
+        } else {
+            log('❌ VIDEO_PROJECTS not loaded!', 'error');
+        }
+        
+        // Test functions
+        if (typeof getAllVideoProjects === 'function') {
+            log('✅ getAllVideoProjects function available', 'success');
+            const videos = getAllVideoProjects();
+            log(`Function returns ${videos.length} videos`, 'success');
+        } else {
+            log('❌ getAllVideoProjects function not available', 'error');
+        }
+        
+        if (typeof getVideoProjectById === 'function') {
+            log('✅ getVideoProjectById function available', 'success');
+            const tiktokVideo = getVideoProjectById('tiktok-video');
+            if (tiktokVideo) {
+                log('✅ TikTok video found by ID', 'success');
+                log(`TikTok video title: ${tiktokVideo.title}`, 'success');
+            } else {
+                log('❌ TikTok video NOT found by ID', 'error');
+            }
+        } else {
+            log('❌ getVideoProjectById function not available', 'error');
+        }
+    </script>
+</body>
+</html>
